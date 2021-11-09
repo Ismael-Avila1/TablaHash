@@ -20,3 +20,12 @@ void cInfoPueblo::imprimir() {
     std::cout << "\tLa temperatura media es de " << tempMedia << " grados Centigrados" << std::endl;
     std::cout << "\tSu atraccion principal es " << atraccPrincipal << std::endl;
 }
+
+void cInfoPueblo::serializar(std::fstream &out) {
+    out << nombre << std::endl;
+    out << estado << std::endl;
+    out << MagicoDesde << std::endl;
+    out << tipoClima << std::endl;
+    out << tempMedia << std::endl;
+    out << atraccPrincipal << std::endl;
+}
