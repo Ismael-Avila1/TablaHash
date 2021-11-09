@@ -22,6 +22,7 @@ void cInfoPueblo::imprimir() {
 }
 
 void cInfoPueblo::serializar(std::fstream &out) {
+    out << CLSID_INFOPUEBLO << std::endl;
     out << nombre << std::endl;
     out << estado << std::endl;
     out << MagicoDesde << std::endl;

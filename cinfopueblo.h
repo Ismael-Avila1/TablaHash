@@ -5,6 +5,7 @@
 #include <string>
 #include <fstream>
 
+#define CLSID_INFOPUEBLO 100
 
 class cInfoPueblo {
 private:
