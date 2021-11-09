@@ -25,6 +25,7 @@ private:
 
     friend class cNodo;
     friend class cLista;
+    friend class cTablaHash;
 };
 
 #endif // CINFOPUEBLO_H
