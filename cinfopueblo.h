@@ -17,15 +17,17 @@ private:
     std::string atraccPrincipal;
 
     cInfoPueblo();
-    cInfoPueblo(std::string nombre, std::string estado, int magicoDesde, std::string clima, int temp, std::string atraccion);
-
-    void imprimir();
 
     void serializar(std::fstream& out);
 
     friend class cNodo;
     friend class cLista;
     friend class cTablaHash;
+
+public:
+    cInfoPueblo(std::string nombre, std::string estado, int magicoDesde, std::string clima, int temp, std::string atraccion);
+
+    void imprimir();
 };
 
 #endif // CINFOPUEBLO_H
