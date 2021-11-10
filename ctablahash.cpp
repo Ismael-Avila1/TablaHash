@@ -33,12 +33,14 @@ void cTablaHash::eliminar(std::string nombre, std::string estado, int temp) {
 
 void cTablaHash::imprimir() {
     for(int i=0; i<SIZE; i++) {
-        std::cout << "Index Hash Table: " << i << std::endl;
+        std::cout << "Hash Table Index: " << i << std::endl;
         arr[i].imprimir();
     }
 }
 
 void cTablaHash::serializar(std::fstream &out) {
-    for(int i=0; i<SIZE; i++)
+    for(int i=0; i<SIZE; i++) {
+        out << "Hash Table Index: " << i << std::endl;
         arr[i].serializar(out);
+    }
 }
