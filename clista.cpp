@@ -62,10 +62,14 @@ bool cLista::isFull() {
 void cLista::imprimir() {
     cIterador it;
 
+    std::cout << "List size: " << size() << std::endl;
+
     for(it=begin(); it!=end(); it++) {
         it.pActual->infoNodo->imprimir();
         std::cout << std::endl << std::endl;
     }
+
+    std::cout << std::endl << std::endl;
 }
 
 cIterador &cLista::begin() {
