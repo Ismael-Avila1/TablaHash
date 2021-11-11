@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 
 #include "ctablahash.h"
 #include "cinfopueblo.h"
@@ -112,6 +113,11 @@ int main()
     th.eliminar("Chiapa de Corzo", "Chiapas", 24);
 
     th.imprimir();
+
+
+    fstream salida("contenido.txt", ios_base::out);
+    th.serializar(salida);
+    salida.close();
 
     return 0;
 }
